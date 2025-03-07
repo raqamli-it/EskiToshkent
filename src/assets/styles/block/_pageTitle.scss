@@ -1,0 +1,40 @@
+.page_title_container {
+  position: relative;
+  width: 100%;
+  min-height: 220px; /* Adjust as needed */
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  background-image: url("../../img/www.jpg"); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.backgroundTitle {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/Screenshot\ 2024-09-25\ 140333.png"); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+@media (max-width: 880px) {
+  .overlay {
+    padding: 4rem 3rem !important;
+    h1 {
+      font-size: 2rem !important;
+    }
+  }
+}
+@media (max-width: 527px) {
+  .overlay {
+    padding: 4rem 2rem !important;
+    h1 {
+      font-size: 1.5rem !important;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+#ramka {
+  /* background-attachment: fixed; */
+  backdrop-filter: blur(5px);
+}
+/* Jadvalni responsiv qilish */
+.table-container {
+  overflow-x: auto;
+}
+
+.table-container table {
+  width: 100% !important;
+  border-collapse: collapse !important;
+}
+@media (max-width: 768px) {
+  .table-container table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+  }
+}
+.table-container th,
+.table-container td {
+  padding: 8px !important;
+  text-align: left !important;
+}
+
+.text-detail1 * {
+  text-wrap: wrap !important;
+}
+
+.text-detail1 p {
+  text-wrap: wrap !important;
+}

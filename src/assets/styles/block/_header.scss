@@ -1,0 +1,352 @@
+.full__data__picer {
+  margin: 0 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  .live__time {
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+
+  .live__calendar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    // width: 400px;
+    .live_clendar_item {
+      display: flex;
+      // gap: 10px;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #fff;
+      background: #fff;
+      color: #000;
+      border-radius: 5px;
+      padding: 5px;
+    }
+    * {
+      padding: 0;
+    }
+    div:first-child {
+      width: max-content !important;
+      .react-datepicker__tab-loop {
+        border: none !important;
+      }
+    }
+    .react-datepicker__input-container {
+      input {
+        border: none !important;
+        outline: none !important;
+        color: #000 !important;
+        border-radius: 3px;
+        text-align: center !important;
+        width: 150px !important;
+      }
+    }
+  }
+}
+
+.navbar-container {
+  background-image: linear-gradient(
+      41deg,
+      rgba(107, 107, 107, 0.04) 0%,
+      rgba(107, 107, 107, 0.04) 8%,
+      rgba(31, 31, 31, 0.04) 8%,
+      rgba(31, 31, 31, 0.04) 100%
+    ),
+    linear-gradient(
+      9deg,
+      rgba(228, 228, 228, 0.04) 0%,
+      rgba(228, 228, 228, 0.04) 62%,
+      rgba(54, 54, 54, 0.04) 62%,
+      rgba(54, 54, 54, 0.04) 100%
+    ),
+    linear-gradient(
+      124deg,
+      rgba(18, 18, 18, 0.04) 0%,
+      rgba(18, 18, 18, 0.04) 37%,
+      rgba(233, 233, 233, 0.04) 37%,
+      rgba(233, 233, 233, 0.04) 100%
+    ),
+    linear-gradient(
+      253deg,
+      rgba(201, 201, 201, 0.04) 0%,
+      rgba(201, 201, 201, 0.04) 55%,
+      rgba(47, 47, 47, 0.04) 55%,
+      rgba(47, 47, 47, 0.04) 100%
+    ),
+    linear-gradient(
+      270deg,
+      rgba(172, 172, 172, 0.04) 0%,
+      rgba(172, 172, 172, 0.04) 33%,
+      rgba(26, 26, 26, 0.04) 33%,
+      rgba(26, 26, 26, 0.04) 100%
+    ),
+    linear-gradient(
+      64deg,
+      rgba(11, 11, 11, 0.04) 0%,
+      rgba(11, 11, 11, 0.04) 38%,
+      rgba(87, 87, 87, 0.04) 38%,
+      rgba(87, 87, 87, 0.04) 100%
+    ),
+    linear-gradient(
+      347deg,
+      rgba(199, 199, 199, 0.04) 0%,
+      rgba(199, 199, 199, 0.04) 69%,
+      rgba(4, 4, 4, 0.04) 69%,
+      rgba(4, 4, 4, 0.04) 100%
+    ),
+    linear-gradient(
+      313deg,
+      rgba(36, 36, 36, 0.04) 0%,
+      rgba(36, 36, 36, 0.04) 20%,
+      rgba(91, 91, 91, 0.04) 20%,
+      rgba(91, 91, 91, 0.04) 100%
+    ),
+    linear-gradient(90deg, rgb(10, 17, 72), rgb(35, 148, 228));
+  padding: 16px 100px;
+  color: white;
+}
+.navbar-container .h1 {
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+  .logo {
+    width: 7rem;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .nav-items {
+    display: flex;
+    flex-direction: column;
+
+    .top-row,
+    .bottom-row {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      gap: 10px;
+    }
+    .top-row {
+      margin: 12px 0;
+      .weather {
+        z-index: 1;
+        padding: 0;
+        width: 200px;
+      }
+    }
+    .bottom-row {
+      display: flex;
+      align-items: center;
+      padding: 20px 0;
+      gap: 35px;
+      .menu-item {
+        font-weight: 500;
+        letter-spacing: 1px;
+        font-size: 1.4rem;
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    .search-bar {
+      z-index: 2;
+      input {
+        width: 100%;
+        border: 2px solid white;
+        outline: none;
+        background-color: transparent;
+        border-radius: 5px;
+        padding: 5px 10px;
+      }
+    }
+  }
+
+  .hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  .sidebar {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    right: -280px;
+    height: 100%;
+    background-color: #444;
+    width: 280px;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: right 0.3s ease;
+    .weather__sidebar {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      bottom: 10px;
+    }
+    .live__calendar__sidebar {
+      // display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 100;
+      .live_clendar_item {
+        display: flex;
+        flex-wrap: wrap;
+        // gap: 10px;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #fff;
+        background: #fff;
+        color: #000;
+        border-radius: 5px;
+        padding: 5px;
+      }
+      * {
+        padding: 0;
+      }
+      div:first-child {
+        // width: max-content !important;
+        .react-datepicker__tab-loop {
+          border: none !important;
+        }
+      }
+      .react-datepicker__input-container {
+        border-bottom: 1px solid #000 !important;
+        input {
+          outline: none !important;
+          color: #000 !important;
+          border-radius: 3px;
+          text-align: center !important;
+
+          // padding-left:5px ;
+          width: 150px !important;
+
+          // outline: none !important;
+        }
+      }
+    }
+    .logo_img_sidebar {
+      height: 4rem;
+    }
+    &.open {
+      right: 0;
+    }
+
+    .sidebar-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .sidebar_logo {
+        font-weight: 600;
+      }
+      .close-btn {
+        font-size: 2rem;
+        cursor: pointer;
+      }
+    }
+
+    .sidebar-search {
+      input {
+        padding: 5px;
+        width: 100%;
+        margin-bottom: 10px;
+        border-radius: 5px;
+      }
+    }
+
+    .sidebar-menu-item {
+      font-weight: 500;
+      letter-spacing: 2px;
+      // font-size: 1.1rem;
+      padding: 10px 0;
+      border-bottom: 1px solid #555;
+      cursor: pointer;
+    }
+  }
+}
+@media (max-width: 1210px) {
+  .navbar {
+    padding: 10px 70px;
+  }
+}
+@media (max-width: 1150px) {
+  .logo {
+    height: 5rem !important;
+    width: 5rem !important;
+    img {
+      width: 100% !important;
+      height: 100% !important;
+    }
+  }
+  .full__data__picer {
+    .react-datepicker__input-container {
+      input {
+        color: #000 !important;
+      }
+    }
+  }
+  .navbar {
+    padding: 30px 100px;
+  }
+  .live__calendar {
+    display: none !important;
+  }
+  .search-bar {
+    display: none !important;
+  }
+  .bottom-row {
+    display: none !important;
+  }
+  .weather {
+    justify-content: flex-end;
+  }
+  .nav-items {
+    // display: none !important;
+
+    &.open {
+      display: flex;
+    }
+  }
+
+  .hamburger {
+    display: block !important;
+  }
+}
+@media (max-width: 680px) {
+  .navbar {
+    padding: 20px 60px;
+  }
+}
+
+@media (max-width: 540px) {
+  .navbar {
+    padding: 20px 30px;
+  }
+}
+@media (max-width: 500px) {
+  .live__time {
+    display: none !important;
+  }
+  .weather {
+    display: none !important;
+  }
+}
+@media (max-width: 450px) {
+  .navbar {
+    padding: 20px 40px;
+  }
+}

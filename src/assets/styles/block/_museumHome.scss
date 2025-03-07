@@ -1,0 +1,107 @@
+.museum_home_container {
+  // margin-top: 12rem;
+  background: #e5e5e569;
+  padding: 0 4rem 4rem 4rem;
+  .title_container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    .title {
+      font-weight: 600;
+      font-size: 3rem;
+      color: #000;
+      padding: 3rem 0 2rem 0;
+    }
+    p {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 32px;
+      font-weight: 600;
+      color: #ff4646;
+    }
+  }
+
+  .swiper {
+    padding: 1rem 0;
+  }
+
+  .swiper-slide {
+    background: #fff;
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .museum_home_content {
+      cursor: pointer;
+      .museum_home_img {
+        position: relative;
+        width: fit-content;
+
+        .museum_home_img_card {
+          height: 450px;
+
+          position: relative;
+          overflow: hidden;
+          img {
+            height: 100%;
+            display: block;
+            border-radius: 8px;
+            width: 100%;
+
+            object-fit: cover;
+          }
+          .museum_home_img_title {
+            border-radius: 3px;
+            font-weight: 600;
+            font-size: 15px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            opacity: 1;
+            transition: opacity 0.3s ease;
+          }
+        }
+        .museum_home_img_card:hover {
+          .museum_home_img_title {
+            opacity: 1;
+          }
+          img {
+            border-radius: 8px;
+            transform: scale(1.1);
+            transition: 0.3s ease;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .museum_home_container {
+    margin-top: 10rem !important;
+    padding: 0 3rem 4rem 3rem !important;
+  }
+}
+@media (max-width: 810px) {
+  .museum_home_img_card {
+    height: 400px !important;
+  }
+}
+@media (max-width: 680px) {
+  .museum_home_img_card {
+    height: 350px !important;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .museum_home_container {
+    padding: 0 2rem 4rem 2rem !important;
+  }
+}

@@ -1,0 +1,41 @@
+.weather__row .weater-wrap {
+  display: flex;
+  align-items: center;
+  // justify-content: flex-end;
+  width: 100%;
+  text-transform: capitalize;
+  z-index: -1;
+
+  img {
+    padding: 5px;
+  }
+
+  p {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 16px;
+    color: #fff;
+    // margin-bottom: 0rem;
+    flex-direction: column;
+    // padding: 0 5px;
+    // width: 50%;
+  }
+
+  .div-weater {
+    // width: 57%;
+    display: flex;
+    align-items: center;
+    // justify-content: flex-end;
+
+    img {
+      width: 40px;
+      height: 50px;
+    }
+  }
+}
+
+.swip-weater-wrap {
+  width: 100px;
+}

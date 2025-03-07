@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  qadimiy_toshkent-front:
+    image: toshkent-front
+    build: .
+    container_name: qadimiytosh_front
+    ports:
+      - "5010:5173"
+    restart: always
+    environment:
+      - TZ=Asia/Tashkent
+    networks:
+      - tarix
+networks:
+  tarix:
+    name: tarix
+    external: true

@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "general";
+@import "./block/language";
+@import "./block/header";
+@import "./block/_footer";
+@import "./block/video";
+@import "./block/arxeologyHome";
+@import "./block/allPageLenta";
+@import "./block/ashyolarHome";
+@import "./block/museumHome";
+@import "./block/olimlarHome";
+@import "./block/about";
+@import "./block/pageTitle";
+@import "./block/weather";
+@import "./block/newsPage";
+@import "./block/full_card";
+@import "./block/library_home";
+@import "./block/news_home";
+@import "./block/library_page";
+@import "./block/museum_page";
+@import "./block/museum_detail";
+@import "./block/arxeology_detail";
+@import "./block/ashyolar_detail";

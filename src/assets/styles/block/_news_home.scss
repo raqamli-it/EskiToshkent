@@ -1,0 +1,184 @@
+.swiper_archi_container {
+  width: 100%;
+  background: #e5e5e55d;
+  padding: 0 4rem 4rem 4rem;
+
+  .title_container {
+    display: flex;
+    padding-top: 30px;
+    align-items: center;
+    gap: 20px;
+
+    .title {
+      font-weight: 600;
+      font-size: 3rem;
+      color: #000;
+    }
+
+    p {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 600;
+      color: #ff4646;
+    }
+  }
+
+  .swiper {
+    padding: 2rem 0;
+
+    .exhibition-card {
+      display: flex;
+      flex-direction: row; // Standart holatda gorizontal holat
+      overflow: hidden;
+      background: #b7b7b7c5;
+      color: #000;
+      cursor: pointer;
+      height: 400px; // Yoki istalgan balandlik
+      border-radius: 10px;
+
+      .exhibition-image {
+        img {
+          width: 100%;
+          transition-duration: 0.6s;
+          height: 100%; // Rasmning balandligini kartochka bilan moslashtirish
+          object-fit: cover;
+        }
+      }
+
+      .exhibition-info {
+        flex: 1; // Matn uchun kamroq joy ajratish
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .exhibition-title {
+          font-size: 30px;
+          margin-bottom: 10px;
+          padding: 20px 0;
+          font-weight: 600;
+        }
+
+        .exhibition-description {
+          margin-bottom: 20px;
+        }
+
+        .exhibition-date {
+          font-weight: 600;
+        }
+
+        .exhibition-link {
+          text-decoration: none;
+          display: flex;
+          gap: 1rem;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+          text-align: left;
+          padding: 0.75rem 1.5rem;
+          font-size: 1rem;
+          color: #000;
+
+          .more_button {
+            width: 100px;
+            padding: 8px 12px;
+            background: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 20px;
+            font-weight: 600;
+            cursor: pointer;
+          }
+
+          .more_button:hover {
+            background-color: #0056b3;
+          }
+
+          .exhibition-date {
+            font-style: italic;
+          }
+        }
+      }
+    }
+
+    .exhibition-card:hover {
+      color: #000;
+      transition: 0.9s;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      .exhibition-image {
+        img {
+          transition-duration: 0.6s;
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          padding: 20px;
+        }
+      }
+
+      .exhibition-title {
+        text-decoration: underline;
+      }
+
+      .more_button {
+        background: #000 !important;
+        color: #ffe800;
+      }
+    }
+  }
+
+  // 1220px yoki undan kichik ekranlar uchun media so'rovi
+  @media (max-width: 1220px) {
+    .swiper {
+      .exhibition-card {
+        border-radius: 10px;
+        flex-direction: column; // Rasm va matnni vertikal holatda joylashtirish
+        height: 500px; // Mazmun bo'yicha balandlikni sozlash
+
+        .exhibition-image {
+          flex: 2;
+          width: 100%;
+          height: 60%; // Rasmning balandligi ko'proq joy egallash uchun
+          // Rasmni moslashtirish
+          img {
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+
+        .exhibition-info {
+          padding: 10px; // Kichik ekranlar uchun padding
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 870px) {
+  .swiper_archi_container {
+    padding: 0 3rem 4rem 3rem;
+    .exhibition-title {
+      padding-left: 10px !important;
+      font-size: 25px !important;
+    }
+    .more_button {
+      width: 80px !important;
+      height: 80px !important;
+      padding: 10px !important;
+    }
+  }
+}
+@media screen and (max-width: 650px) {
+  .title_container {
+    .title {
+      font-size: 2rem !important;
+    }
+    p {
+      margin-top: 20px;
+      font-size: 15px;
+    }
+  }
+}
+@media screen and (max-width: 440px) {
+  .swiper_archi_container {
+    padding: 0 2rem 4rem 2rem;
+  }
+}
