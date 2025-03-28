@@ -13,7 +13,7 @@ export default function News() {
   const [apiData, setApiData] = useState([]);
 
   const fetchData = () => {
-    fetch("http://subdomain.qadimiytoshkent.uz/news/")
+    fetch("http://subdomain.eskitoshkent.uz/news/")
       .then((response) => response.json())
       .then((repo) => {
         console.log("API Response:", repo);
@@ -68,7 +68,7 @@ export default function News() {
                   </div>
 
                   <p className="create_time mt-3 text-[18px]">
-                     {dateFormat(news.create, "dd.mm.yyyy")}
+                    {dateFormat(news.create, "dd.mm.yyyy")}
                   </p>
                 </div>
               </div>

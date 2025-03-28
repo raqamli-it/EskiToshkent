@@ -20,7 +20,7 @@ export default function ArxeologyHome() {
   const [apiData, setApiData] = useState([]);
 
   const fetchData = () => {
-    fetch("http://subdomain.qadimiytoshkent.uz/news/")
+    fetch("http://subdomain.eskitoshkent.uz/news/")
       .then((response) => response.json())
       .then((repo) => {
         console.log("API Response:", repo);

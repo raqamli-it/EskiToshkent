@@ -13,7 +13,7 @@ export default function Arxeology() {
   const fetchData = async (page = 1) => {
     try {
       const response = await fetch(
-        `http://subdomain.qadimiytoshkent.uz/archaeologies/?page=${page}`
+        `http://subdomain.eskitoshkent.uz/archaeologies/?page=${page}`
       );
       const resp = await response.json();
 
