@@ -19,10 +19,22 @@ import NewsDetail from "./Pages/NewsDetail";
 import ArxAshiyoList from "./Pages/ArxAshiyoList";
 import YodgorlikAshyolari from "./Pages/YodgorlikAshyolari";
 import Layout from "./Layout";
+import backgroundImage from "./assets/img/background.png";
 
 function App() {
   return (
-    <div className="app_container">
+    <div
+      className="app_container"
+      style={{
+        backgroundImage: `url(${backgroundImage})`,
+        width: "100%",
+        minHeight: "100vh",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        backgroundPosition: "center top",
+        backgroundAttachment: "fixed",
+      }}
+    >
       {/* <ScrollToTop /> */}
       <Routes>
         <Route path="/" Component={Layout}>
@@ -41,10 +53,12 @@ function App() {
             path="/yodgorlikAshyolari/:id"
             Component={YodgorlikAshyolari}
           />
-          <Route path="/ashyolarDetail/:archaeologyId/details/:itemId" Component={AshyolarDetail} />
+          <Route
+            path="/ashyolarDetail/:archaeologyId/details/:itemId"
+            Component={AshyolarDetail}
+          />
           <Route path="/ashyolarDetail" Component={AshyolarDetail} />
           <Route path="/newsDetail/:id" Component={NewsDetail} />
-          
         </Route>
       </Routes>
     </div>

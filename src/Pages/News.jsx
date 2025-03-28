@@ -27,18 +27,18 @@ export default function News() {
   }, []);
 
   return (
-    <div className="news_container">
+    <div className="news_container" style={{ minHeight: "65vh" }}>
       <PageTitle title={"Yangiliklar"} />
       <section className="news_card_container lg:px-10">
-        <div className="container px-6 pb-10 mx-auto">
-          <div className="grid grid-cols-3 gap-6 xl:grid-cols-2 lg:lg:grid-cols-1">
+        <div className="container pb-10 mx-auto">
+          <div className="grid grid-cols-2 gap-6 xl:grid-cols-2 lg:lg:grid-cols-1">
             {apiData?.map((news) => (
               <div
                 key={news.id}
                 className="flex group justify-between overflow-hidden cursor-pointer bg-[#414040c0] rounded-[16px]"
               >
                 <img
-                  className="relative z-10 object-cover w-3/5 h-[300px] group-hover:rounded-[20px] group-hover:scale-90 transition-all duration-500"
+                  className="relative z-10 object-cover w-3/5 h-[350px] group-hover:rounded-[20px] group-hover:scale-90 transition-all duration-500"
                   src={news.image}
                   alt="fff"
                 />

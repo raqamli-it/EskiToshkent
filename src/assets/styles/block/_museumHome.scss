@@ -35,22 +35,20 @@
     align-items: center;
     .museum_home_content {
       cursor: pointer;
+      width: 100%;
+      background-color: transparent;
       .museum_home_img {
         position: relative;
-        width: fit-content;
-
         .museum_home_img_card {
           height: 450px;
-
           position: relative;
           overflow: hidden;
+          width: 100%;
           img {
             height: 100%;
-            display: block;
             border-radius: 8px;
             width: 100%;
-
-            object-fit: cover;
+            // object-fit: cover;
           }
           .museum_home_img_title {
             border-radius: 3px;

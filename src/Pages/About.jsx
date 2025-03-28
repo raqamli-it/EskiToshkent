@@ -3,6 +3,7 @@ import PageTitle from "../Components/PageTittle";
 import { DataService } from "../config/dataService";
 import { endpoints } from "../config/endpoints";
 import AboutTitle from "../Components/AboutTitle";
+import backgroundImage from "../assets/img/background.png";
 
 export default function About() {
   // bu qism api lar bilan ishlash uchun
@@ -41,7 +42,18 @@ export default function About() {
   //
 
   return (
-    <div className="bg-white">
+    <div
+      className="bg-white"
+      style={{
+        backgroundImage: `url(${backgroundImage})`,
+        width: "100%",
+        minHeight: "100vh",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        backgroundPosition: "center top",
+        backgroundAttachment: "fixed",
+      }}
+    >
       <AboutTitle />
 
       <div className="about_content_container relative md:px-8">

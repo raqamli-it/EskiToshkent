@@ -12,18 +12,20 @@ export default function Home() {
   return (
     <div>
       <Video />
+
       <NewsHome />
       <ArxeologyHome />
-      {/* <AllPageLenta title="Arxeologiya yodgorliklari" button="Hammasi" /> */}
       <AshyolarHome />
-      {/* <AllPageLenta title="Ashyolar" button="Hammasi" /> */}
       <MuseumHome />
       <LibraryHome />
+      {/*  */}
+      {/* <AllPageLenta title="Arxeologiya yodgorliklari" button="Hammasi" /> */}
+      {/* <AllPageLenta title="Ashyolar" button="Hammasi" /> */}
       {/* <OlimlarHome /> */}
       {/* <AllPageLenta
         title="Toshkent Arxeologiya Yodgorliklari"
         button="Ro'yxatdan o'tish"
-      /> */}
+        /> */}
     </div>
   );
 }
