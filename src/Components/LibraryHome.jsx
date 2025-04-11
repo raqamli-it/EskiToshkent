@@ -36,7 +36,7 @@ export default function LibraryHome() {
     <div className="ashyo_home_container">
       <div className="title_container">
         <h1 className="title">Kutubxona</h1>
-        <Link to="/ashyolar">
+        <Link to="/library">
           <p>
             <span>BARCHASI</span> <FaArrowRightLong />
           </p>
